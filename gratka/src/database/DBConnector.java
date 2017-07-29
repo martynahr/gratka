@@ -7,7 +7,7 @@ public class DBConnector {
 
 		public Connection Connection() throws ClassNotFoundException, SQLException {
 				Class.forName("com.mysql.jdbc.Driver");
-				return DriverManager.getConnection( "jdbc:mysql://localhost:3306/tabelefx","root","taja");
+				return DriverManager.getConnection( "jdbc:mysql://localhost:3306/gratkadb","root","taja");
 			}
 	
 }
