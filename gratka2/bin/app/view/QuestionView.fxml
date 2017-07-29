@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane fx:id="QV" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="app.controller.QuestionController">
+   <center>
+      <BorderPane prefHeight="600.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <left>
+            <VBox prefHeight="481.0" prefWidth="64.0" BorderPane.alignment="CENTER">
+               <children>
+                  <RadioButton fx:id="rba" mnemonicParsing="false" prefHeight="54.0" prefWidth="74.0" text="A)" />
+                  <RadioButton fx:id="rbb" mnemonicParsing="false" prefHeight="54.0" prefWidth="75.0" text="B)" />
+                  <RadioButton fx:id="rbc" mnemonicParsing="false" prefHeight="54.0" prefWidth="61.0" text="C)" />
+                  <RadioButton fx:id="rbd" mnemonicParsing="false" prefHeight="54.0" prefWidth="57.0" text="D)" />
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="219.0" prefWidth="439.0">
+                     <children>
+                        <Label fx:id="lbla" prefHeight="52.0" prefWidth="191.0" text="odpowiedź a" />
+                        <Label fx:id="lblb" prefHeight="52.0" prefWidth="191.0" text="odpowiedź b" />
+                        <Label fx:id="lblc" prefHeight="52.0" prefWidth="191.0" text="odpowiedź c" />
+                        <Label fx:id="lbld" prefHeight="52.0" prefWidth="191.0" text="odpowiedź d" />
+                     </children>
+                  </VBox>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnnext" layoutX="309.0" layoutY="36.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#actionend" prefHeight="27.0" prefWidth="141.0" text="zakończ" />
+                        <Button fx:id="btnend" layoutX="33.0" layoutY="36.0" mnemonicParsing="false" onAction="#actionnext" text="kolejne pytanie" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblq" layoutX="14.0" layoutY="80.0" prefHeight="65.0" prefWidth="371.0" text="tutaj pojawi się pytanie" />
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </center>
+</BorderPane>
